@@ -1,0 +1,9 @@
+<h1>{{ basket?.name }}</h1>   
+<hr>
+
+{{basket?.products}}
+
+<div class="product-item" *ngFor="let product of basket?.products">
+    <div class="product-name">{{ product.name }} ({{ product.count }} adet)</div>
+    <div class="product-price">{{ product.price }} TL</div>
+</div>

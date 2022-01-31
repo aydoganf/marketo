@@ -1,0 +1,8 @@
+<h2>Basket List</h2>
+
+<div class="basket-item" *ngFor="let basket of basketList">
+    <span>
+        <a routerLink="/basket/{{basket.id}}">{{ basket.name }}</a>
+    </span>
+    <div class="basket-createdAt">{{ basket.createdAt }}</div>
+</div>
